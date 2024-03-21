@@ -25,6 +25,7 @@ main{
     line-height: 3;
 
 }
+
 #results{
     background-color: black;
     color: rgb(10, 141, 10);
@@ -34,6 +35,44 @@ main{
     font-family: 'Seven segment', sans-serif;
     font-size: 40px;
 }
+
 #buttons{  
-    height: 200px;
+    padding: 20px;
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.num{
+    flex: 4;  
+}
+
+.operators{
+    flex: 1; 
+}
+
+button{
+    padding: 6px 10px;
+    font-size: 20px;
+    font-family: 'Michroma', sans-serif;
+    border-radius: 10px;
+    border-left: 1px solid #888;
+    border-top:#ccc;
+    border-right:1px solid #ccc;
+    
+}
+.num button{
+    flex-basis: 57px;
+}
+.num button.large{
+    flex-basis: 120px;
+}
+.operators button{
+
+    flex-basis: 50px;
+}
+.orange{
+    background-color: orange;
 }
